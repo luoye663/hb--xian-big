@@ -975,10 +975,10 @@
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-"@jiaminghi/data-view@^2.7.3":
+"@jiaminghi/data-view@^2.10.0":
   version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@jiaminghi/data-view/-/data-view-2.10.0.tgz#2146d8fc71b9f24be808238ca050ddb7a4c8949f"
-  integrity sha512-Cud2MTiMcqc5k2KWabR/svuVQmXHANqURo+yj40370/LdI/gyUJ6LG203hWXEnT1nMCeiv/SLVmxv3PXLScCeA==
+  resolved "https://registry.npm.taobao.org/@jiaminghi/data-view/download/@jiaminghi/data-view-2.10.0.tgz#2146d8fc71b9f24be808238ca050ddb7a4c8949f"
+  integrity sha1-IUbY/HG58kvoCCOMoFDdt6TIlJ8=
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@jiaminghi/charts" "*"
