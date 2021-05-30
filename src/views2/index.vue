@@ -8,13 +8,17 @@
           <div class="d-flex jc-center">
             <dv-decoration-8 :color="['#568aea', '#000000']" style="width:2.5rem;height:.625rem;"/>
             <div class="title">
-              <span class="title-text">可视化平台</span>
-              <dv-decoration-6
-                  class="title-bototm"
-                  :reverse="true"
-                  :color="['#50e3c2', '#67a1e5']"
-                  style="width:3.125rem;height:.1rem;"
-              />
+              <span class="title-text" style="font-size: 20px">软通项目智慧工地平台</span>
+
+              <dv-decoration-6--  >
+<!--                <span class="title-text">软通项目智慧工地平台</span>-->
+              </dv-decoration-6-->
+<!--              <dv-decoration-6-->
+<!--                  class="title-bototm"-->
+<!--                  :reverse="true"-->
+<!--                  :color="['#50e3c2', '#67a1e5']"-->
+<!--                  style="width:3.125rem;height:.1rem;"-->
+<!--              />-->
             </div>
             <dv-decoration-8
                 :reverse="true"
@@ -36,12 +40,12 @@
 
 
             <dv-border-box-8 class="react-right ml-3 ">
-              <span class="text fw-b home-font-size" @click="handelClick('positioning')">人员定位</span>
+              <span class="text fw-b home-font-size" @click="handelClick('video')">视频监控</span>
             </dv-border-box-8>
 
-            <dv-border-box-8 class="react-right ml-3 ">
+<!--            <dv-border-box-8 class="react-right ml-3 ">
               <span class="text fw-b home-font-size" @click="handelClick('positioning')">环境监测</span>
-            </dv-border-box-8>
+            </dv-border-box-8>-->
           </div>
 
 
@@ -52,12 +56,12 @@
                 @mouseleave="leaver('towerCrane')"-->
 
             <dv-border-box-8 class="react-left mr-4" style="margin-left: 0.35rem">
-              <span class="text fw-b home-font-size" @click="handelClick('towerCrane')">塔吊数据</span>
+              <span class="text fw-b home-font-size" @click="handelClick('towerCrane')">塔群监测</span>
             </dv-border-box-8>
-            <!--视频健康-->
+            <!--视频监控-->
             <dv-border-box-8 class="react-left mr-3">
               <!--/*             <span class="react-after" style="background: #1a5cd7"></span>*/-->
-              <span class="text fw-b home-font-size" @click="handelClick('environment')">视频健康</span>
+              <span class="text fw-b home-font-size" @click="handelClick('environment')">定位监测</span>
             </dv-border-box-8>
             <!-- 时间-->
             <dv-border-box-8 class="react-left mr-4">
@@ -144,8 +148,8 @@ export default {
     },
     handelClick(type) {
       switch (type) {
-        case 'home':
-          this.iframe_url = 'https://bing.com';
+        case 'video':
+          this.iframe_url = 'http://127.0.0.1:8881/html2/';
           break;
         case 'positioning':
           console.log("positioning")
